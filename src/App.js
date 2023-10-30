@@ -1,11 +1,23 @@
-;
+// src/App.js
+import React from 'react';
+import HomePage from './Pages/HomePage';
+import cover from './Images/cover.jpg';
 
-function App() {
+const appStyles = {
+  backgroundImage: `url(${cover})`,
+  backgroundSize: 'cover', 
+  backgroundPosition: 'center', 
+  backgroundRepeat: 'no-repeat', 
+  height: '100vh',
+  opacity: 1,
+};
+
+const App = () => {
   return (
-    <div className="App">
-  
+    <div style={appStyles}>
+      <HomePage />
     </div>
   );
-}
+};
 
 export default App;
